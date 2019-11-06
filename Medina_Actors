@@ -1,0 +1,23 @@
+contract CPDMgmt {
+    string adminName;
+    uint CPDWallet;
+    
+        struct Institution {      /// This is the struct (and its values) for the Institution actor      
+        address institutionID;    /// The unique ID number of a seminar-giving institution 
+        string institutionName;   /// The institution name corresponding to a given ID 
+        uint institutionWallet;    /// The amount of tokens (CPD units) for a specified institution 
+    }
+    
+    struct Teacher {              /// This is the struct (and its values) for the Teacher actor
+        address teacherID;        /// The unique ID (PRC-given) number of a licensed teacher 
+        string teacherName;       /// The teacher's name 
+        uint teacherWallet;       /// The amount of tokens for a specified teacher 
+    }
+    
+    struct Seminar {              /// This is the strict (and its values) for the Seminar actor
+        address seminarID;        /// This unique ID number for a conducted seminar (determined by PRC and institutions) 
+        uint date;                /// The date a specified seminar is conducted 
+        uint seminarAllocation;   /// The total allocated CPD units for a specified seminar 
+    }
+    
+}
