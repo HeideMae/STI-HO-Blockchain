@@ -1,11 +1,7 @@
 pragma solidity ^0.5.0;
 
 contract CPD {
-	//The smart contract contains the complete process and flow: checking of balance, sending of unit requests, and transferring of units. Transfer of units removes the current request. 
-	//Things to improve on: The getrequest function should not need the input of the requestor address and should display multiple senders and their request unit value. Looking into either array, multiple returns, or tables.
-	//For the web3js and UI, we are able to establish a connection between web3 and the smart contract. Looking into using React for the UI and then establishing its conenction with web3
-	//We are now able to run the smart contract using metamask(Ropsten test network), remix, and web3.
-
+	
      uint private constant __totalSupply = 1000000000;        /// Total CPD Units in circulation. 
     
      mapping(address => RequestOfinsti) public RequestofInstitution; ///This is where the institution submits a request for CPD units to PRC
